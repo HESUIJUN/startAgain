@@ -36,6 +36,27 @@ for(var i = 0; i<2; i++){
     }
 }
 document.write(myarr);
+    //第一步把之前的数据写成一个数组的形式,定义变量为 infos
+    var infos = new Array(['小A', '女', 21, '大一'], ['小B', '男', 23, '大三'],
+        ['小C', '男', 24, '大四'], ['小D', '女', 21, '大一'],
+
+        ['小E', '女', 22, '大四'], ['小F', '男', 21, '大一'],
+
+        ['小G', '女', 22, '大二'], ['小H', '女', 20, '大三'],
+
+        ['小I', '女', 20, '大一'], ['小J', '男', 20, '大三'])
+//第一次筛选，找出都是大一的信息
+for(var i = 0; i<infos.lenght; i++){
+    if(infos[i][3]=="大一"){
+        document.write(infos[i],"<br/>");
+    };
+};
+//第二次筛选，找出都是女生的信息
+for(var j = 0; j<infos.length; j++){
+    if(infos[j][1]=="女"){
+        document.write(infos[j],"<br/>";)
+    };
+};
 </script>
 
 </html>
